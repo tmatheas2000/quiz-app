@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site":"quiz-app-24",
+    "public": "dist/quiz-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

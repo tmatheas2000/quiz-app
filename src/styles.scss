@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-blue{
+    background-color: #3522db;
+    color: #fff;
+}
+
+.warning-message {
+    background-color: #ca0b00;
+    color: #fff;
+}
+
+.success-message {
+    background-color: #4BB543;
+    color: #fff;
+}
