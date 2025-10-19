@@ -3,13 +3,13 @@
         <div class="mt-5 col-11 col-sm-8 col-md-5">
             <h1 class="text-center">Online Quiz</h1>
             <div *ngIf="!question && qno != totalQuestion" class="text-center mt-5">
-                <img class="img-fluid" src="https://www.med-technews.com/downloads/2449/download/Survey.jpg?cb=9d99d682493cda435378e3437b5c2ef5&w=640">
-                <button mat-button color="blue" class="text-center mt-5" (click)="getStarted()">Get Started !</button>
+                <img class="img-fluid" src="https://static.vecteezy.com/system/resources/previews/007/343/548/non_2x/memphis-style-yellow-quiz-time-banner-design-for-promotion-vector.jpg">
+                <button mat-raised-button color="primary" class="text-center mt-5" (click)="getStarted()">Get Started !</button>
             </div>
             <div *ngIf="!question && qno == totalQuestion" class="text-center mt-5">
                 <img class="img-fluid" src="https://wpforms.com/wp-content/uploads/2017/04/thank-you-page-examples.jpg">
                 <h2 class="mt-3">Correct Answer : {{correct}} / {{totalQuestion}}</h2>
-                <button mat-button color="blue" class="text-center mt-5" (click)="restart()">Restart !</button>
+                <button mat-raised-button color="primary" class="text-center mt-5" (click)="restart()">Restart !</button>
             </div>
             <div class="d-flex flex-column mt-5" *ngIf="question">
                 <div class="d-flex flex-row">
@@ -27,7 +27,7 @@
                         <label class="optionText">{{option}}</label>
                     </div>
                 </div> 
-                <button [disabled]="!answer" mat-button color="blue" class="text-center mt-3" (click)="onSubmit()">Submit</button>
+                <button [disabled]="!answer" mat-raised-button color="primary" class="text-center mt-3" (click)="onSubmit()">Submit</button>
             </div>
         </div>
     </div>
